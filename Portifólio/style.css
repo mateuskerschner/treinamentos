@@ -1,0 +1,43 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.principal{
+    height: 100vh;
+    width: 100%;
+    background-color: #191919;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 15px;
+}
+
+.portifolio{
+    color: #ffff;
+    font-size: 45px;
+    font-weight: 500;
+}
+
+span{
+    color: darkred;
+}
+
+li{
+    color: #ffff;
+    list-style: none;
+    display: inline-block;
+    font-size: 20px;
+    margin: 70px;
+    cursor: pointer;
+}
+
+li:hover{
+    color: #ff0000;
+}
