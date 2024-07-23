@@ -2,12 +2,16 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    background-color: #191919;
+}
+
+.flex{
+    display: flex;
 }
 
 .principal{
     height: 100vh;
     width: 100%;
-    background-color: #191919;
 }
 
 nav{
@@ -26,18 +30,103 @@ nav{
 }
 
 span{
-    color: darkred;
+    color: #ff0000;
 }
 
 li{
-    color: #ffff;
     list-style: none;
     display: inline-block;
     font-size: 20px;
     margin: 70px;
     cursor: pointer;
+    text-decoration: none;
 }
 
-li:hover{
-    color: #ff0000;
+a{
+    color: #7e7c7c;
+    list-style: none;
+    display: inline-block;
 }
+
+a:hover{
+    color: #ff0000;
+    transform: scale(1.15);
+    transition: 0.5s;
+}
+
+.nome{
+    background-image: linear-gradient(
+    to top,
+    #ffffff,  #f31111 60%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    font-style: oblique;
+    font-size: 30px;
+}
+
+.Dev{
+    background-image: linear-gradient(
+        to top,
+        #ffffff,  #f31111 60%);
+        background-clip: text;
+        -webkit-background-clip: text;
+        color: transparent;
+        font-style: oblique;
+        font-size: 50px;
+}
+
+.btn-contato button{
+    padding: 20px 30px;
+    background-image: linear-gradient(
+        to top left,
+        #ffffff,  #ff0000 80%);
+        font-size: 15px;
+        font-weight: 700;
+        border-radius: 30px;
+        cursor: pointer;
+}
+
+button{
+    box-shadow: 0px 0px 8px #fafafa;
+}
+
+/*Estilo do topo*/
+
+section.topo{
+    padding: 50px 4%;
+}
+
+section.topo .flex{
+    align-items: center;
+    justify-content: center;
+    gap: 90px;
+}
+
+.txt-topo{
+    line-height: 70px;
+}
+
+.img-topo img{
+    position: relative;
+    animation: flut 2s ease-in-out infinite alternate;
+    box-shadow: 0px 0px 80px #fafafa;
+}
+
+@keyframes flut{
+    0%{
+        top: 0;
+    }
+    100%{
+        top: 30px;
+    }
+}
+
+.texto{
+    font-size: 25px;
+    color: #fffefe;
+}
+
+
+
+
