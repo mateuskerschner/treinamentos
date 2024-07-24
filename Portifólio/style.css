@@ -9,10 +9,10 @@
     display: flex;
 }
 
-.principal{
-    height: 100vh;
-    width: 100%;
+.interface1{
+    margin-top: -100px;
 }
+
 
 nav{
     display: flex;
@@ -20,13 +20,13 @@ nav{
     justify-content: space-between;
     padding-left: 40px;
     padding-right: 40px;
-    padding-top: 15px;
+    padding-top: 0px;
 }
 
 .portifolio{
     color: #ffff;
     font-size: 45px;
-    font-weight: 500;
+    font-weight: 400;
 }
 
 span{
@@ -85,6 +85,9 @@ a:hover{
         font-weight: 700;
         border-radius: 30px;
         cursor: pointer;
+        position: relative;
+        top: 60px;
+       left: 300px;
 }
 
 button{
@@ -125,8 +128,85 @@ section.topo .flex{
 .texto{
     font-size: 25px;
     color: #fffefe;
+    line-height: 30px;
+    top: 15px;
+    
+}
+
+.interface1{
+    height: 100vh;
+    scroll-snap-type: y mandatory;
+    overflow-y: scroll;
+}
+
+section{
+    height: 100vh;
+    scroll-snap-align: start;
+    display: flex;
+    position: sticky;
+    top: 0;
+    left: 0;
+    align-items: center;
+    justify-content: center;
+}
+
+.page2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 150px;
+   
+}
+
+.titulo{
+    background-image: linear-gradient(
+    to top,
+    #ffffff,  #f31111 60%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    font-style: oblique;
+    font-size: 40px;
+    line-height: 70px;
+    margin-left: 300px;
+    margin-top: -100px;
+}
+
+.txtsobre{
+    color: #fafafa;
+    line-height: 40px;
+    font-size: 20px;
 }
 
 
+.imgpg2{
+    padding: 10px;
+    line-height: 50px;
+}
 
+.btn-Curriculo button{
+    padding: 20px 30px;
+    background-image: linear-gradient(
+        to top left,
+        #ffffff,  #ff0000 80%);
+        font-size: 15px;
+        font-weight: 700;
+        border-radius: 30px;
+        cursor: pointer;
+        position: relative;
+        top: 60px;
+       left: 300px;
+       box-shadow: 0px 0px 8px #fafafa;
+}
 
+.imghtml{
+    margin-left: -90px;
+}
+
+.imgcss{
+    margin-left: -170px;
+}
+
+.imgpg{
+    margin-left: -50px;
+}
