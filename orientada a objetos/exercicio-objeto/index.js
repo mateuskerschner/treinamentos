@@ -17,6 +17,7 @@ class User {
   const john = new User("John Doe", "john@email.com", "123456")
   
   john.login("john@email.com", "123456")
+  john.login("john@email.com", "654321")
 
   class Product {
     constructor (name, description, price) {
