@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mateus Kerschner</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="topbar">
+        <div class="menu-button" style="display: inline-block; margin-left: 20px; vertical-align: middle;">
+            <button onclick="toggleMenu()">Menu</button>
+            <div id="menu-content" class="menu-content" style="display: none;">
+                <ul>
+                    <li><a href="#1">Início</a></li>
+                    <li><a href="#2">Sobre</a></li>
+                    <li><a href="#3">Projetos</a></li>
+                    <li><a href="#4">Contato</a></li>
+                </ul>
+            </div>
+        </div>
+        <h2 class="portifolio">Portifó<span>lio</span></h2>
+    </div>
+
+    <script>
+        function toggleMenu() {
+            const menuContent = document.getElementById('menu-content');
+            menuContent.style.display = menuContent.style.display === 'block' ? 'none' : 'block';
+        }
+    </script>
+</nav>
+<div id="pagina1">
+    <!-- Conteúdo da página 1 -->
+</div>
+<div class="interface1">
+    <main>
+        <section class="topo">
+            <div class="principal">
+                <div class="interface">
+                    <div class="flex">
+                                <div class="txt-topo">
+                                    <h1 id="1" class="nome">Mateus Noronha Kerschner</h1>
+                                    <h2 class="Dev">Desenvolvedor Web</h2>
+                                    <p class="texto">Sempre fiz coisas que eu acreditava que estava pouco preparado para fazer. <br>
+                                        Quando você tem um momento de incerteza mas persiste, 
+                                        é aí que você consegue avançar.</p>
+                                        <div class="img-topo"></div>
+                                            <div style="text-align: center;">
+                                                <div style="position: absolute; bottom: 70px; width: 100%; text-align: center;">
+                                                    <img src="./img/WhatsApp Image 2024-07-22 at 13.56.04.jpeg" alt="Minha foto" width="170" height="170">
+                                                </div>
+                                            </div>
+                                        </div>
+                                </div><!--txt-topo-->
+                        </div><!--img-->
+                    </div><!---flex-->
+                </div><!--interface-->
+            </div>
+        </section>
+    </main>
+</div>
+<section class="page2">
+    <div class="txtsobre">
+        <h1 id="2" class="titulo">Quem sou</h1>
+        <p>Meu nome é Mateus tenho 22 anos e estou cursando Analise e Desenvolvimento de Sistemas, <br>
+            além dessa graduação faço cursos para aprimorar meus conhecimentos em programação como:  
+        <div class="certificados">
+            <li>CSS3.</li> 
+            <li>HTML5.</li> 
+            <li>Lógica de Programação. </li>
+        </div>
+            Estes são alguns dos meus certificados, atualmente estou cursando Javascript também. <br>
+            Tudo isso que faço é pelo proposito de trabalhar com desenvolvimento de software, <br>
+            á área em que estou procurando  
+            uma oportunidade, pois, gosto de aprender coisas novas todos os dias, 
+            esse é o maior desafio encontrado nessa profissão.</p>
+        <div>
+            <class class="btn-Curriculo">
+                <a href="./img/Mateus N. kerschner 2024-07-24 19_05_00.docx">
+                    <button>Acesse meu currículo para mais informações</button>
+                </a>
+            </class>
+        </div><!--botão-->
+    </div><!--fim txt-->
+    <div class="imgpg2">
+        <div class="imgcss">
+            <img src="./img/curso.jpeg" alt="certificado css" width="300" height="200">
+        </div>
+        <div class="imghtml">
+            <img src="./img/curso1.jpeg" alt="certificado html" width="300" height="200">
+        </div>
+        <div class="imglp">
+            <img src="./img/curso2.jpeg" alt="certificado logica de programação" width="300" height="200">
+        </div>
+    </div><!--fim imgpg2-->
+</section><!-- fim section2 -->
+    <section id="3" class="projetos">
+        <div class="interface">
+            <h1 class="titulop"> Meus Projetos</h1>
+            <p class="praticas">Estes são alguns dos projetos que trabalhei nos cursos que faço, usados para praticar.</p>
+            <div class="flex">
+                <div class="pj1" style="background-image: url(img/imgtodo.png);">
+                    <div class="nome-projeto"><a href="img/exercicio todo/">Lista de Tarefas</a></div>
+                </div>
+                <div class="pj1" style="background-image: url(img/calculadora.png);">
+                    <div class="nome-projeto"><a href="img/calculadora1/">Calculadora</a></div>
+                </div>
+                <div class="pj1" style="background-image: url(img/jogo\ da\ velha.png);">
+                    <div class="nome-projeto"> <a href="img/jogo da velha/">Jogo da Velha</a></div>
+                </div>
+            </div>
+        </div>
+    </section><!--fim projetos-->
+
+    <section class="formulario">
+        <div class="interface">
+            <h1 class="tituloc"> Fala Comigo.</h1>
+            <form action="">
+                <input type="text" name="" id="" placeholder="Seu nome completo:" required>
+                <input type="text" name="" id="" placeholder="Seu e-mail:" required>
+                <input type="text" name="" id="" placeholder="Seu celular:">
+                <textarea name="" id="" placeholder="Sua mensagem"></textarea>
+                <div class="btn-enviar"><input type="submit" value="ENVIAR"></div>
+            </form>
+        </div>
+    </section><!--fim contato-->
+        </div><!--fim-->
+</body>
+
+<style>
+.portifolio {
+    display: block;
+    text-align: center;
+}
+    .menu-button{
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    .menu-button {
+        display: inline-block;
+        margin-right: 70px;
+        vertical-align: middle;
+    }
+
+    .portifolio {
+        display: inline-block;
+        vertical-align: middle;
+    }
+
+    .menu-content ul {
+        padding: 0;
+        margin: 0;
+    }
+
+    .menu-content ul li {
+        margin: 0;
+        padding: 0;
+    }
+
+    .menu-content ul li a {
+        display: inline;
+        text-decoration: none;
+        padding: 5px 5px;
+    }
+    .menu-content ul li {
+        display: block;
+    }
+
+    .menu-content {
+        position: absolute;
+        top: 50px;
+        left: 20px;
+        background-color: white;
+        border: 1px solid #ccc;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        z-index: 1000;
+        width: 200px;
+        padding: 10px;
+    }
+
+    .topbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #f8f9fa;
+        padding: 10px 20px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    .topbar .menu-button {
+        margin: 0;
+    }
+
+    .topbar .portifolio {
+        font-family: 'Playfair Display', serif;
+        font-size: 15px;
+        font-weight: bold;
+        color: #333;
+    }
+    /*fim top bar*/
+
+    .nome {
+        text-align: center;
+    }
+
+    .Dev {
+        font-size: 30px;
+        text-align: center;
+    }
+    .texto {
+        text-align: center;
+        font-size: 20px;
+    }
+    .img-topo {
+
+        margin-top: 20px;
+        text-align: center;
+    }
+
+    /*fim da pagina 1*/
+
+    .page2 {
+        padding: 70px;
+        background-color: #f4f4f4;
+        margin-right: 100px;
+    }
+
+    .page2 .txtsobre {
+        margin-bottom: 20px;
+        font-family: 'Playfair Display', serif;
+        color: #333;
+    }
+
+    .page2 .titulo {
+        font-size: 28px;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+
+    .page2 .txtsobre p {
+        font-size: 18px;
+        line-height: 1.6;
+        text-align: justify;
+    }
+
+    .page2 .certificados {
+        margin-top: 10px;
+        margin-bottom: 10px;
+        list-style-type: disc;
+        padding-left: 20px;
+    }
+
+    .page2 .btn-Curriculo {
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    .page2 .btn-Curriculo button {
+        background-color: #007bff;
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        font-size: 16px;
+        cursor: pointer;
+        border-radius: 5px;
+    }
+
+    .page2 .btn-Curriculo button:hover {
+        background-color: #0056b3;
+    }
+
+    .page2 .imgpg2 {
+        display: flex;
+        justify-content: space-around;
+        margin-top: 20px;
+    }
+
+    .page2 .imgpg2 div {
+        text-align: center;
+    }
+
+    .page2 .imgpg2 img {
+        border: 2px solid #ddd;
+        border-radius: 5px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+
+    
+
+  
+
+</style>
+
